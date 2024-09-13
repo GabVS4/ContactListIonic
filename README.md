@@ -43,7 +43,13 @@ Entre no diretório recém-clonado:
 cd ContactListIonic
 ```
 
-### 3. Executar o servidor
+### 3. Instalar dependências locais
+Instale as dependências locais com o comando:
+```bash
+npm install
+```
+
+### 4. Executar o servidor
 Execute o servidor Ionic com o seguinte comando:
 ```bash
 ionic serve
@@ -65,3 +71,5 @@ Se quiser contribuir para este projeto, sinta-se à vontade para abrir uma issue
 Este projeto é distribuído sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
 ---
+
+**Mantenedor:** [Gabriel V.S](https://github.com/GabVS4)
