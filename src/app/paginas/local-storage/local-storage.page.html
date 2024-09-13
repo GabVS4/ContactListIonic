@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>Novo Contato</ion-title>
+    <ion-menu-button slot="start"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input label="ID do contato:" [(ngModel)]="idSave"></ion-input>
+  <ion-input label="Nome do contato:" [(ngModel)]="nomeSave"></ion-input>
+  <ion-input label="Número do contato" [(ngModel)]="numeroSave"></ion-input>
+  <ion-input label="Email do contato" [(ngModel)]="emailSave"></ion-input>
+
+  <ion-button expand="block" color="secondary" (click)="localStoreSave(idSave,nomeSave,numeroSave,emailSave)">
+    Salvar
+  </ion-button>
+
+  <ion-button expand="block" color="secondary" (click)="localStoreLoad()">
+    Visualizar
+  </ion-button>
+</ion-content>

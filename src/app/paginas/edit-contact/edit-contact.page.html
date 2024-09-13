@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>Editar Contato</ion-title>
+    <ion-menu-button slot="start"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input label="ID do contato:" [(ngModel)]="contato.id" readonly></ion-input>
+  <ion-input label="Nome do contato:" [(ngModel)]="contato.nome"></ion-input>
+  <ion-input label="Número do contato:" [(ngModel)]="contato.numero"></ion-input>
+  <ion-input label="Email do contato:" [(ngModel)]="contato.email"></ion-input>
+
+  <ion-button expand="block" color="primary" (click)="saveContact()">
+    Salvar
+  </ion-button>
+
+  <ion-button expand="block" color="secondary" (click)="cancel()">
+    Cancelar
+  </ion-button>
+</ion-content>
